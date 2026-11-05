@@ -80,7 +80,7 @@ list, your domains, your DNS or your copy, and what to do about it. Built on
 254,054 real bounce messages from 8 workspaces and 1,482 sending domains. It
 reads 99.7% of them, and 99.4% of a workspace it never learned from.
 
-<img src="bouncesitrep.gif" alt="bouncesitrep reading a 79,800-lead campaign export: the bounce rate, the bounces split by whose problem they are, and what to do about each" width="100%">
+<img src="bouncesitrep.gif" alt="bouncesitrep reading a 79,800-lead campaign export: the bounce rate, the bounces split by whose problem they are, and what to do about each" width="400">
 
 ### Smaller tools
 
