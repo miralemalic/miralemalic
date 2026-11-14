@@ -12,7 +12,7 @@ scratch, cold email and cold calling to 25,000+ decision-makers at an 8%
 average reply rate, ran the campaigns, and sold in the biggest meetings they
 booked. That was before GTM engineer was a job title.
 
-As a GTM engineer I've handled everything from the lead list to the reply,
+As a GTM engineer I've handled everything from the lead list to the replies,
 with AI agents answering the replies, for up to 12 clients at a time:
 
 - **Leads:** scrapers for SAM.gov, state business registries, freight load
