@@ -12,6 +12,16 @@ third time.
 
 ## stuff I built
 
+### [micsnitch](https://github.com/miralemalic/micsnitch)
+
+Your phone asks before an app uses the mic. Linux never did, so now it does.
+Any app that tries to record your mic or system audio gets stopped, and you get
+a popup to allow or deny it. GNOME, KDE Plasma, Sway, Hyprland, niri, COSMIC.
+
+<p align="center">
+  <a href="https://github.com/miralemalic/micsnitch"><img src="https://raw.githubusercontent.com/miralemalic/micsnitch/main/docs/popup.png" width="380" alt="micsnitch asking whether to let an app use the microphone"></a>
+</p>
+
 <p align="center">
   <a href="https://github.com/miralemalic/bouncesitrep"><img src="bouncesitrep.gif" width="33%" alt="bouncesitrep reading a 79,800-lead campaign export: the bounce rate, the bounces split by whose problem they are, and what to do about each"></a>
   <a href="https://github.com/miralemalic/inboxsitrep"><img src="https://raw.githubusercontent.com/miralemalic/inboxsitrep/main/docs/demo.gif" width="63%" alt="A walk through the Inbox Sitrep app"></a>
@@ -47,17 +57,6 @@ Slack or Telegram.
 PlusVibe, Instantly and EmailBison. Desktop app, Claude Code plugin or MCP
 server. Tested on 15+ workspaces and 200k+ mailboxes.
 
-### the small ones
-
-- [**mkcsv**](https://github.com/miralemalic/mkcsv) is a little script I wrote
-  for fun. Give it a mysqldump, a pg_dump, psql output or a file with a
-  delimiter nobody can identify, and you get a clean CSV back. Splits huge
-  files too. Zero dependencies.
-- [**micsnitch**](https://github.com/miralemalic/micsnitch): your phone asks
-  before an app uses the mic. Linux never did, so now it does. Any app that
-  tries to record your mic or system audio gets stopped, and you get a popup to
-  allow or deny it. GNOME, KDE Plasma, Sway, Hyprland, niri, COSMIC.
-
 ## off the clock
 
 - **OSINT, cybersecurity, intelligence.** Finding an email no database has is
@@ -66,7 +65,7 @@ server. Tested on 15+ workspaces and 200k+ mailboxes.
 - **Amateur poet.** Hence the haiku. Most of my published work has
   `{three|four}` variants per line.
 - **Linux and privacy stuff.** Fedora and Pop!_OS, on ThinkPads, always
-  ThinkPads. GrapheneOS with no Google on the phone, and a MikroTik that grabs
+  ThinkPads. GrapheneOS on the phone, and a MikroTik that grabs
   every DNS query in the house. On purpose.
 
 ## what I use
