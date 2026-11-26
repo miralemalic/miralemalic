@@ -19,7 +19,7 @@ Any app that tries to record your mic or system audio gets stopped, and you get
 a popup to allow or deny it. GNOME, KDE Plasma, Sway, Hyprland, niri, COSMIC.
 
 <p align="center">
-  <a href="https://github.com/miralemalic/micsnitch"><img src="micsnitch.gif" width="560" alt="MicSnitch: an app starts recording, a popup asks, Deny, and the mic goes quiet"></a>
+  <a href="https://github.com/miralemalic/micsnitch"><img src="micsnitch.webp" width="560" alt="MicSnitch: an app starts recording, a popup asks, Deny, and the mic goes quiet"></a>
 </p>
 
 <table>
@@ -62,8 +62,8 @@ server. Tested on 15+ workspaces and 200k+ mailboxes.
 </td>
 </tr>
 <tr>
-<td valign="top"><a href="https://github.com/miralemalic/bouncesitrep"><img src="bouncesitrep.gif" width="100%" alt="Bounce Sitrep reading a campaign export: the bounces split by whose problem they are, and what to do about each"></a></td>
-<td valign="top"><a href="https://github.com/miralemalic/inboxsitrep"><img src="https://raw.githubusercontent.com/miralemalic/inboxsitrep/main/docs/demo.gif" width="100%" alt="A walk through the Inbox Sitrep app"></a></td>
+<td valign="top"><a href="https://github.com/miralemalic/bouncesitrep"><img src="bouncesitrep.webp" width="100%" alt="Bounce Sitrep reading a campaign export: the bounces split by whose problem they are, and what to do about each"></a></td>
+<td valign="top"><a href="https://github.com/miralemalic/inboxsitrep"><img src="inboxsitrep.webp" width="100%" alt="A walk through the Inbox Sitrep app"></a></td>
 </tr>
 </table>
 
