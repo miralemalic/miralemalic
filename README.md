@@ -19,7 +19,7 @@ Any app that tries to record your mic or system audio gets stopped, and you get
 a popup to allow or deny it. GNOME, KDE Plasma, Sway, Hyprland, niri, COSMIC.
 
 <p align="center">
-  <a href="https://github.com/miralemalic/micsnitch"><img src="micsnitch.webp" width="560" alt="MicSnitch: an app starts recording, a popup asks, Deny, and the mic goes quiet"></a>
+  <a href="https://github.com/miralemalic/micsnitch"><img src="micsnitch.gif" width="560" alt="MicSnitch: an app starts recording, a popup asks, Deny, and the mic goes quiet"></a>
 </p>
 
 <table>
