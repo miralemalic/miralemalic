@@ -12,22 +12,21 @@ third time.
 
 ## stuff I built
 
-### [micsnitch](https://github.com/miralemalic/micsnitch)
+### [MicSnitch](https://github.com/miralemalic/micsnitch)
 
 Your phone asks before an app uses the mic. Linux never did, so now it does.
 Any app that tries to record your mic or system audio gets stopped, and you get
 a popup to allow or deny it. GNOME, KDE Plasma, Sway, Hyprland, niri, COSMIC.
 
 <p align="center">
-  <a href="https://github.com/miralemalic/micsnitch"><img src="https://raw.githubusercontent.com/miralemalic/micsnitch/main/docs/popup.png" width="380" alt="micsnitch asking whether to let an app use the microphone"></a>
+  <a href="https://github.com/miralemalic/micsnitch"><img src="micsnitch.gif" width="560" alt="MicSnitch: an app starts recording, a popup asks, Deny, and the mic goes quiet"></a>
 </p>
 
-<p align="center">
-  <a href="https://github.com/miralemalic/bouncesitrep"><img src="bouncesitrep.gif" width="33%" alt="bouncesitrep reading a 79,800-lead campaign export: the bounce rate, the bounces split by whose problem they are, and what to do about each"></a>
-  <a href="https://github.com/miralemalic/inboxsitrep"><img src="https://raw.githubusercontent.com/miralemalic/inboxsitrep/main/docs/demo.gif" width="63%" alt="A walk through the Inbox Sitrep app"></a>
-</p>
+<table>
+<tr>
+<td width="50%" valign="top">
 
-### [bouncesitrep](https://github.com/miralemalic/bouncesitrep)
+### [Bounce Sitrep](https://github.com/miralemalic/bouncesitrep)
 
 Point it at any sequencer's bounce export and it tells you whose problem each
 bounce is: your list, your domains, your DNS or your copy. Then what to do
@@ -39,6 +38,9 @@ and the other means stop sending from that domain right now.
 
 Built on 250k+ real bounce messages from 50+ workspaces and almost 1,500 sending domains. If you
 send real volume, you want this. One Python file, no dependencies.
+
+</td>
+<td width="50%" valign="top">
 
 ### [Inbox Sitrep](https://github.com/miralemalic/inboxsitrep)
 
@@ -56,6 +58,14 @@ Slack or Telegram.
 
 PlusVibe, Instantly and EmailBison. Desktop app, Claude Code plugin or MCP
 server. Tested on 15+ workspaces and 200k+ mailboxes.
+
+</td>
+</tr>
+<tr>
+<td valign="top"><a href="https://github.com/miralemalic/bouncesitrep"><img src="bouncesitrep.gif" width="100%" alt="Bounce Sitrep reading a campaign export: the bounces split by whose problem they are, and what to do about each"></a></td>
+<td valign="top"><a href="https://github.com/miralemalic/inboxsitrep"><img src="https://raw.githubusercontent.com/miralemalic/inboxsitrep/main/docs/demo.gif" width="100%" alt="A walk through the Inbox Sitrep app"></a></td>
+</tr>
+</table>
 
 ## off the clock
 
