@@ -1,101 +1,83 @@
-# Miralem Alic
+# hey, I'm Miralem
 
-GTM engineer · CET (UTC+1)
+> *Code in the morning,*<br>
+> *armbars in the afternoon,*<br>
+> *poems after dark.*
 
-I closed 100+ B2B deals as a co-founder. I build cold email end to end, from
-domain setup to the positive reply.
+That's most days. The code part is GTM engineering, which mostly means making
+sure cold email lands in the inbox and not next to the "you've won an iPhone"
+ones. Lists, domains, DNS, copy, replies, all of it. I sent 80M+ emails in
+2026, and when something breaks twice, I write a tool so it can't break a
+third time.
 
-## About
+## stuff I built
 
-In 2022 I co-founded a small outbound agency. I set up its outbound from
-scratch, cold email and cold calling to 25,000+ decision-makers at an 8%
-average reply rate, ran the campaigns, and sold in the biggest meetings they
-booked. That was before GTM engineer was a job title.
-
-As a GTM engineer I've handled everything from the lead list to the replies,
-with AI agents answering the replies, for up to 12 clients at a time:
-
-- **Leads:** scrapers for SAM.gov, state business registries, freight load
-  boards, Overture Maps, Angi and Yellow Pages. Email permutations for
-  businesses no database covers. Enrichment from databases of up to 18
-  million rows.
-- **List hygiene:** company names cleaned so they read naturally in a
-  sentence; past bounces, repliers, do-not-contact lists and addresses known
-  to bounce taken out before every upload.
-- **Campaigns:** copy, spintax and A/B variants, checked for broken merge
-  fields before they send. Lists split by the prospect's email provider.
-  Follow-up rounds that re-send with a fresh variant. All built and loaded
-  through the API.
-- **Infrastructure:** domains, mailboxes and warmup pools for clients sending
-  millions of emails a month.
-- **Deliverability:** blocklists, burned domains and authentication, and
-  catching what breaks before it reaches the other domains or the warmup
-  pools.
-- **Replies and CRM:** the AI agents that answer replies, n8n workflows, and
-  CRM integrations and reporting.
-
-## Results
-
-- **23,000+ positive replies for two clients.** For one, 1.48 million
-  emails: 4.7% reply rate, 12,766 positive replies, 1.7% bounce rate. For
-  the other, in a single month, 1.24 million emails: 3.2% reply rate, 34.2%
-  of replies positive (10,582), 1.4% bounce rate.
-- **$25M+ in contracts for clients.** At the agency I co-founded, our
-  campaigns booked the meetings and I joined the big ones to close them:
-  100+ deals, the largest over $400k.
-- **Leads nobody else is emailing.** I build lists from SAM.gov, state
-  business registries, freight load boards, Overture Maps and trade
-  directories. Where a business has no listed email, I work out its likely
-  address and verify it. None of these are in Apollo or ZoomInfo, so nobody
-  else is emailing them. On one client, scraped and open-data sources got 4.3
-  to 6.1 interested replies per 1,000 emails; bought databases got 1.8 to
-  2.9.
-- **Every campaign split by the prospect's email provider.** Gmail,
-  Microsoft 365 and other ESPs filter mail differently, so I split each list
-  by who hosts the inbox and run each part as its own campaign, with its own
-  volume and senders. The largest build: 1.75 million leads across 24
-  campaigns.
-- **Problems caught before they spread.** Blocklistings, Microsoft blocking
-  a whole tenant, Gmail quietly filing mail as spam: I find them early and act
-  before they reach the rest of the domains or the warmup pools. Inbox
-  Sitrep, below, is that work turned into software.
-
-## What I built
-
-### [Inbox Sitrep](https://github.com/miralemalic/inboxsitrep)
-
-Checks a cold email setup every few hours: which domains and campaigns have a
-problem, why, and the fix, which it applies from the app with an undo. Tells
-you how many domains to buy before you run out, and catches broken copy
-before it sends. PlusVibe, Instantly and EmailBison. Desktop app, Claude Code
-plugin and MCP server. Built, used and tested on 15+ workspaces and 200,000+
-mailboxes.
-
-<a href="https://github.com/miralemalic/inboxsitrep"><img src="https://raw.githubusercontent.com/miralemalic/inboxsitrep/main/docs/demo.gif" alt="Inbox Sitrep" width="100%"></a>
+<p align="center">
+  <a href="https://github.com/miralemalic/bouncesitrep"><img src="bouncesitrep.gif" width="33%" alt="bouncesitrep reading a 79,800-lead campaign export: the bounce rate, the bounces split by whose problem they are, and what to do about each"></a>
+  <a href="https://github.com/miralemalic/inboxsitrep"><img src="https://raw.githubusercontent.com/miralemalic/inboxsitrep/main/docs/demo.gif" width="63%" alt="A walk through the Inbox Sitrep app"></a>
+</p>
 
 ### [bouncesitrep](https://github.com/miralemalic/bouncesitrep)
 
-Reads any sequencer's bounce export and says who has to fix each bounce: your
-list, your domains, your DNS or your copy, and what to do about it. Built on
-254,054 real bounce messages from 8 workspaces and 1,482 sending domains. It
-reads 99.7% of them, and 99.4% of a workspace it never learned from.
+Point it at any sequencer's bounce export and it tells you whose problem each
+bounce is: your list, your domains, your DNS or your copy. Then what to do
+about each one.
 
-<img src="bouncesitrep.gif" alt="bouncesitrep reading a 79,800-lead campaign export: the bounce rate, the bounces split by whose problem they are, and what to do about each" width="400">
+Most bounce tools stop at hard vs soft, which doesn't tell you much. A dead
+address and a blocked domain are both "hard", but one means clean your list
+and the other means stop sending from that domain right now.
 
-### Smaller tools
+Built on 250k+ real bounce messages from 50+ workspaces and almost 1,500 sending domains. If you
+send real volume, you want this. One Python file, no dependencies.
 
-- [**mkcsv**](https://github.com/miralemalic/mkcsv) turns database dumps and
-  text with an unknown delimiter into clean CSV.
-- [**micsnitch**](https://github.com/miralemalic/micsnitch) asks before any
-  app records your microphone, on Linux.
+### [Inbox Sitrep](https://github.com/miralemalic/inboxsitrep)
 
-## Tools
+Cold email has way too many moving parts. Domains, mailboxes, warmup,
+SPF/DKIM/DMARC, blocklists, bounce rates, merge fields that break the second
+you hit send. Most people starting out juggle five tabs and a spreadsheet and
+still miss the one thing that's on fire.
 
-Python, SQL (DuckDB), REST APIs and webhooks, n8n, Claude Code and Codex.
-Clay, Apollo, ZoomInfo, Sales Navigator. PlusVibe, Instantly, EmailBison.
-HubSpot, Salesforce, GoHighLevel. SPF, DKIM, DMARC, blocklists, Gmail and
-Microsoft filtering.
+Inbox Sitrep puts all of it on one page. Every few hours it checks your setup
+and tells you what's broken, why, and what to do about it. Approve the fix and
+it does it for you, with an undo. It also tells you how many domains to buy
+before you run out, warns you before a campaign runs out of leads, and catches
+broken copy before it sends. Every morning there's a short report waiting in
+Slack or Telegram.
 
-## Contact
+PlusVibe, Instantly and EmailBison. Desktop app, Claude Code plugin or MCP
+server. Tested on 15+ workspaces and 200k+ mailboxes.
 
-[LinkedIn](https://www.linkedin.com/in/miralem-alic-094497250/)
+### the small ones
+
+- [**mkcsv**](https://github.com/miralemalic/mkcsv) is a little script I wrote
+  for fun. Give it a mysqldump, a pg_dump, psql output or a file with a
+  delimiter nobody can identify, and you get a clean CSV back. Splits huge
+  files too. Zero dependencies.
+- [**micsnitch**](https://github.com/miralemalic/micsnitch): your phone asks
+  before an app uses the mic. Linux never did, so now it does. Any app that
+  tries to record your mic or system audio gets stopped, and you get a popup to
+  allow or deny it. GNOME, KDE Plasma, Sway, Hyprland, niri, COSMIC.
+
+## off the clock
+
+- **OSINT, cybersecurity, intelligence.** Finding an email no database has is
+  basically OSINT with a quota, so this one was always going to happen.
+- **Wrestling, BJJ, MMA.** The armbars in the haiku are real.
+- **Amateur poet.** Hence the haiku. Most of my published work has
+  `{three|four}` variants per line.
+- **Linux and privacy stuff.** Fedora and Pop!_OS, on ThinkPads, always
+  ThinkPads. GrapheneOS with no Google on the phone, and a MikroTik that grabs
+  every DNS query in the house. On purpose.
+
+## what I use
+
+Python, SQL, n8n, Clay, Claude Code, Codex, and a long list of others. I'd
+type them out, but it's after dark and I have poems to write.
+
+<br>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/miralem-alic-094497250/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8+PC9zdmc+Cg==" alt="LinkedIn"></a>
+</p>
+
+<p align="center"><sub>thanks for reading. unlike most cold emails, this one doesn't need a reply.</sub></p>
