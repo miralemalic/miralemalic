@@ -53,8 +53,8 @@ Inbox Sitrep puts all of it on one page. Every few hours it checks your setup
 and tells you what's broken, why, and what to do about it. Approve the fix and
 it does it for you, with an undo. It also tells you how many domains to buy
 before you run out, warns you before a campaign runs out of leads, and catches
-broken copy before it sends. Every morning there's a short report waiting in
-Slack or Telegram.
+broken copy before it sends. At the end of every day there's a short report in
+Slack or Telegram, and anything urgent pings you right away.
 
 PlusVibe, Instantly and EmailBison. Desktop app, Claude Code plugin or MCP
 server. Tested on 30+ workspaces and 225k+ mailboxes.
