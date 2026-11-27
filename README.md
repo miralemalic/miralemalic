@@ -57,7 +57,7 @@ broken copy before it sends. Every morning there's a short report waiting in
 Slack or Telegram.
 
 PlusVibe, Instantly and EmailBison. Desktop app, Claude Code plugin or MCP
-server. Tested on 15+ workspaces and 200k+ mailboxes.
+server. Tested on 30+ workspaces and 225k+ mailboxes.
 
 </td>
 </tr>
